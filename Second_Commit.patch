@@ -1,0 +1,136 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1530895687000)
++++ .idea/vcs.xml	(date 1530895687000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/java/com/hack/innovvapp/Fragments/EmitrafeedbackFrament.java
+===================================================================
+--- app/src/main/java/com/hack/innovvapp/Fragments/EmitrafeedbackFrament.java	(date 1530900697000)
++++ app/src/main/java/com/hack/innovvapp/Fragments/EmitrafeedbackFrament.java	(date 1530900697000)
+@@ -1,18 +0,0 @@
+-package com.hack.innovvapp.Fragments;
+-
+-import android.os.Bundle;
+-import android.support.annotation.NonNull;
+-import android.support.annotation.Nullable;
+-import android.support.v4.app.Fragment;
+-import android.view.LayoutInflater;
+-import android.view.View;
+-import android.view.ViewGroup;
+-
+-public class EmitrafeedbackFrament extends Fragment {
+-
+-    @Nullable
+-    @Override
+-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+-        return super.onCreateView(inflater, container, savedInstanceState);
+-    }
+-}
+Index: app/src/main/java/com/hack/innovvapp/Fragments/BhamashahFeedBackFragment.java
+===================================================================
+--- app/src/main/java/com/hack/innovvapp/Fragments/BhamashahFeedBackFragment.java	(date 1530900697000)
++++ app/src/main/java/com/hack/innovvapp/Fragments/FeedBackFragment.java	(date 1530901779000)
+@@ -2,5 +2,7 @@
+ 
+ import android.support.v4.app.Fragment;
+ 
+-public class BhamashahFeedBackFragment extends Fragment {
++public class FeedBackFragment extends Fragment {
++
++
+ }
+Index: app/src/main/res/layout/content_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/content_main.xml	(date 1530900697000)
++++ app/src/main/res/layout/content_main.xml	(date 1530901238000)
+@@ -9,4 +9,5 @@
+     tools:showIn="@layout/app_bar_main">
+ 
+ 
++
+ </android.support.constraint.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_emitra_feedback.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_emitra_feedback.xml	(date 1530900697000)
++++ app/src/main/res/layout/fragment_emitra_feedback.xml	(date 1530902538000)
+@@ -5,6 +5,16 @@
+     android:orientation="vertical">
+ 
+ 
++    <EditText
++        android:id="@+id/suggestion_edit_text"
++        android:layout_width="match_parent"
++        android:layout_height="150dp"
++        android:hint="@string/write_feedback_here"
++        android:layout_margin="10dp"
++        android:gravity="center"
++
++        />
++
+ 
+ 
+ 
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(date 1530900697000)
++++ app/src/main/res/values/strings.xml	(date 1530901616000)
+@@ -1,11 +1,11 @@
+ <resources>
+     <string name="app_name">Hackathon5.0</string>
+-    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+-    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+-    <string name="nav_header_title" translatable="false">Android Studio</string>
+-    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+-    <string name="nav_header_desc" translatable="false">Navigation header</string>
+-    <string name="action_settings" translatable="false">Settings</string>
++    <string name="navigation_drawer_open">Open navigation drawer</string>
++    <string name="navigation_drawer_close">Close navigation drawer</string>
++    <string name="nav_header_title">Android Studio</string>
++    <string name="nav_header_subtitle">android.studio@android.com</string>
++    <string name="nav_header_desc">Navigation header</string>
++    <string name="action_settings">Settings</string>
+ 
+     <string name="about_emitra">"ईमित्रा की जानकारी "</string>
+     <string name="about_bhamashah">भामाशाह की जानकारी</string>
+@@ -13,4 +13,5 @@
+     <string name="bhamashah_feedback">भामाशाह के लिय सुझाव</string>
+     <string name="new_services_feedback">नई सेवाओं के लिए सुझाव दें</string>
+     <string name="new_serices_title">नई सेवाओं के बारे में जानें</string>
++    <string name="write_feedback_here">अपने सुझाव यहां लिखें</string>
+ </resources>
+Index: app/src/main/res/values-hi-rIN/strings.xml
+===================================================================
+--- app/src/main/res/values-hi-rIN/strings.xml	(date 1530900697000)
++++ app/src/main/res/values-hi-rIN/strings.xml	(date 1530900697000)
+@@ -1,10 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<resources>
+-    <string name="app_name">Hackathon5.0</string>
+-    <string name="about_emitra">"ईमित्रा की जानकारी "</string>
+-    <string name="about_bhamashah">भामाशाह की जानकारी</string>
+-    <string name="emitra_feedback">ईमित्रा के लिय सुझाव</string>
+-    <string name="bhamashah_feedback">भामाशाह के लिय सुझाव</string>
+-    <string name="new_services_feedback">नई सेवाओं के लिए सुझाव दें</string>
+-    <string name="new_serices_title">नई सेवाओं के बारे में जानें</string>
+-</resources>
+\ No newline at end of file

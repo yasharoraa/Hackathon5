@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "537192202964",
+    "firebase_url": "https://servicesreviewrajasthan.firebaseio.com",
+    "project_id": "servicesreviewrajasthan",
+    "storage_bucket": "servicesreviewrajasthan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537192202964:android:687e97dbbcd49a31",
+        "android_client_info": {
+          "package_name": "com.hack.innovvapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537192202964-ec8iq7qo5g1p7idhd8o8rku0p6l9c0o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnvXTBcm1RdFc0xeFzdqyUAMQ5-wjcGMk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
